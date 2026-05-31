@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-const API = 'http://localhost:5000/api'
+const API = import.meta.env.VITE_API_URL || 'http://localhost:5000/api'
 
 const LANGUAGE_COLORS = {
   Hindi:   { bg: '#fff0f0', color: '#c0392b', border: '#f5c6c6' },
